@@ -72,8 +72,15 @@ document.write (`<p>${elemento.hora} - ${elemento.especialista} - ${elemento.pac
     });
 
 
-  
+      // Requerimiento 6
 
+      document.write(`<h3>6. Filtrar aquellos pacientes que indican ser de FONASA en la lista de consultas médicas de Traumatología </h3>`);
+
+traumatologia.filter(function (pacienteFonasa) {
+    if (pacienteFonasa.prevision === 'FONASA') {
+        document.write(`<p>${pacienteFonasa.paciente} - ${pacienteFonasa.prevision}</p>`);
+    }
+});
 
 
 
