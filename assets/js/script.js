@@ -46,17 +46,36 @@ traumatologia.push(
 
   dental.forEach ((elemento) => {
 
-    console.log(elemento)
 
 document.write (`<p>${elemento.hora} - ${elemento.especialista} - ${elemento.paciente} - ${elemento.rut} - ${elemento.prevision} <p>`);
 });
 
 
-
+  // Requerimiento 4
+  
+  const listadoPacientes = radiologia.concat(traumatologia, dental);
+  
+  document.write(`<h3>4. Listado total de todos los pacientes que se atendieron en el centro médico</h3>`);
+  
+  listadoPacientes.forEach((objeto) => {
+      document.write(`<p>${objeto.paciente}</p>`);
+  });
+  
 
 
 
   
+
+
+
+
+
+
+
+
+
+
+
 
 //Agregar código para el desafio 2 aquí
 
