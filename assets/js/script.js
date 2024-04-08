@@ -52,7 +52,7 @@ document.write (`<p>${elemento.hora} - ${elemento.especialista} - ${elemento.pac
 
 
   // Requerimiento 4
-  
+
   const listadoPacientes = radiologia.concat(traumatologia, dental);
   
   document.write(`<h3>4. Listado total de todos los pacientes que se atendieron en el centro médico</h3>`);
@@ -61,7 +61,15 @@ document.write (`<p>${elemento.hora} - ${elemento.especialista} - ${elemento.pac
       document.write(`<p>${objeto.paciente}</p>`);
   });
   
+    // Requerimiento 5
 
+    document.write(`<h3>5. Filtrar aquellos pacientes que indican ser de ISAPRE en la lista de consultas médicas de Dental </h3>`);
+
+    dental.filter(function (pacienteIsapre) {
+        if (pacienteIsapre.prevision === 'ISAPRE') {
+            document.write(`<p>${pacienteIsapre.paciente} - ${pacienteIsapre.prevision}</p>`);
+        }
+    });
 
 
   
