@@ -44,6 +44,12 @@ traumatologia.push(
 
   // Requerimiento 3
 
+  dental.forEach ((elemento) => {
+
+    console.log(elemento)
+
+document.write (`<p>${elemento.hora} - ${elemento.especialista} - ${elemento.paciente} - ${elemento.rut} - ${elemento.prevision} <p>`);
+});
 
 
 
