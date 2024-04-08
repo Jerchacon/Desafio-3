@@ -27,7 +27,7 @@ let dental = [
     {hora: '14:00', especialista: 'RAQUEL VILLASECA',       paciente: 'ANA SEPULVEDA',  rut: '14441281-0', prevision: 'ISAPRE'},
 ];
 
-//Agregar código para el desafio 2 aquí
+//Requerimiento 1
 
 traumatologia.push(
     {hora: "09:00", especialista: "RENÉ POBLETE", paciente: "ANA GELLONA", rut: "13123329-7", prevision: "ISAPRE",},
@@ -37,12 +37,24 @@ traumatologia.push(
     {hora: "12:00", especialista: "MATIAS ARAVENA", paciente: "SUSANA POBLETE", rut: "14345656-6", prevision: "FONASA",}
   )
 
- 
+  
+  //Requerimiento 2
+  radiologia.shift();
+  radiologia.pop();
 
+  // Requerimiento 3
+
+
+
+
+
+
+
+  
 
 //Agregar código para el desafio 2 aquí
 
-document.write(`<p>Cantidad de atenciones para Radiología: ${radiologia.length}</p>`);
+/* document.write(`<p>Cantidad de atenciones para Radiología: ${radiologia.length}</p>`);
 document.write(`<p>Cantidad de atenciones para Traumatología: ${traumatologia.length}</p>`);
 document.write(`<p>Cantidad de atenciones para Dental: ${dental.length}</p>`);
 
@@ -50,3 +62,4 @@ document.write(`<p>Cantidad de atenciones para Dental: ${dental.length}</p>`);
 document.write(`<p>Primera atencion: ${radiologia[0].paciente} - ${radiologia[0].prevision} | Última atención: ${radiologia[radiologia.length -1].paciente} - ${radiologia[radiologia.length -1].prevision}.</p>`);
 document.write(`<p>Primera atencion: ${traumatologia[0].paciente} - ${traumatologia[0].prevision} | Última atención: ${traumatologia[traumatologia.length -1].paciente} - ${traumatologia[traumatologia.length -1].prevision}.</p>`);
 document.write(`<p>Primera atencion: ${dental[0].paciente} - ${dental[0].prevision} | Última atención: ${dental[dental.length -1].paciente} - ${dental[dental.length -1].prevision}.</p>`);
+ */
